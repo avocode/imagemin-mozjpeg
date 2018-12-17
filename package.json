@@ -24,7 +24,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "snyk": "snyk test"
   },
   "files": [
     "index.js"
@@ -41,14 +42,15 @@
     "optimize"
   ],
   "dependencies": {
+    "@avocode/mozjpeg": "5.0.0-avocode",
     "exec-buffer": "^3.0.0",
-    "is-jpg": "^1.0.0",
-    "@avocode/mozjpeg": "^4.1.5"
+    "is-jpg": "^1.0.0"
   },
   "devDependencies": {
     "ava": "*",
     "is-progressive": "^1.0.1",
     "pify": "^2.3.0",
+    "snyk": "^1.117.1",
     "xo": "*"
   },
   "xo": {
