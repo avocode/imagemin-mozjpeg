@@ -42,7 +42,7 @@
     "optimize"
   ],
   "dependencies": {
-    "@avocode/mozjpeg": "5.0.0-avocode",
+    "@avocode/mozjpeg": "5.0.0-avocode.2",
     "exec-buffer": "^3.0.0",
     "is-jpg": "^1.0.0"
   },

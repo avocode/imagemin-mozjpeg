@@ -42,13 +42,25 @@
     imurmurhash "^0.1.4"
     slide "^1.1.5"
 
-"@avocode/mozjpeg@5.0.0-avocode":
-  version "5.0.0-avocode"
-  resolved "https://registry.yarnpkg.com/@avocode/mozjpeg/-/mozjpeg-5.0.0-avocode.tgz#d82241f295e356a8f3678b7bb0f9a9d8fc50e394"
-  integrity sha512-huVoxN3rIDE8IoFZUnQMIJG0ABgApqQGboHO0rrK8sOQkqEB3qNFgjGGiAHLTW38x98/V/MPZFYjupz0lPkFKA==
+"@avocode/bin-wrapper@^4.1.0-avocode":
+  version "4.1.0-avocode"
+  resolved "https://registry.yarnpkg.com/@avocode/bin-wrapper/-/bin-wrapper-4.1.0-avocode.tgz#c6328b99fb2ae35330d3e1ca3435c19972a5d7ab"
+  integrity sha512-dexNbZMYjlmFU5vlN8tm2YSVc/UaO7LAEZUtKUh45p9PRzy//sChWp32QLdEY1ytE4FB7hCMxjEiKDey5TddCg==
   dependencies:
+    bin-check "^4.1.0"
+    bin-version-check "^4.0.0"
+    download "^7.1.0"
+    import-lazy "^3.1.0"
+    os-filter-obj "^2.0.0"
+    pify "^4.0.1"
+
+"@avocode/mozjpeg@5.0.0-avocode.2":
+  version "5.0.0-avocode.2"
+  resolved "https://registry.yarnpkg.com/@avocode/mozjpeg/-/mozjpeg-5.0.0-avocode.2.tgz#413af97712317fa4b402e8d4ee86b5cb9314817f"
+  integrity sha512-2u8iU9y54FTpuV6+hjMLCpW6svKPDEjhURNmpaB5ZsJJRMDCndWfmUN1e35YAFIKrr0ZVYXSBbr0zQplrMucUA==
+  dependencies:
+    "@avocode/bin-wrapper" "^4.1.0-avocode"
     bin-build "^3.0.0"
-    bin-wrapper "^4.1.0"
     logalot "^2.0.0"
 
 "@babel/code-frame@^7.0.0":
@@ -849,18 +861,6 @@ bin-version@^3.0.0:
   dependencies:
     execa "^1.0.0"
     find-versions "^3.0.0"
-
-bin-wrapper@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/bin-wrapper/-/bin-wrapper-4.1.0.tgz#99348f2cf85031e3ef7efce7e5300aeaae960605"
-  integrity sha512-hfRmo7hWIXPkbpi0ZltboCMVrU+0ClXR/JgbCKKjlDjQf6igXa7OwdqNcFWQZPZTgiY7ZpzE3+LjjkLiTN2T7Q==
-  dependencies:
-    bin-check "^4.1.0"
-    bin-version-check "^4.0.0"
-    download "^7.1.0"
-    import-lazy "^3.1.0"
-    os-filter-obj "^2.0.0"
-    pify "^4.0.1"
 
 binary-extensions@^1.0.0:
   version "1.12.0"
